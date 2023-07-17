@@ -253,6 +253,144 @@ a {
     padding: 53 0;
 }
 
+.about__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 146px;
+}
+
+.about__media {
+    position: relative;
+}
+
+.about__label {
+    color: #5E6085;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.about__heading {
+    max-width: 520px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+
+.about__desc {
+    margin-bottom: 54px;
+    max-width: 431px;
+}
+
+.about__checklist {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 34px;
+}
+
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #48496A;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.about__check-item::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: #FF5D31;
+}
+
+.about__check-item::after {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 3px;
+    content: url(../icon/Check.svg);
+    display: inline-block;
+}
+
+/* About media row 1 */
+
+.about__card {
+    position: absolute;
+    top: 157px;
+    left: 0;
+    padding: 30px 26px;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background-color: #5BD6E2;
+}
+
+.about__card__title {
+    margin-bottom: 14px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.about__card__desc {
+    color: #C6F4F9;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.429;
+}
+
+.about__card__decor {
+    position: absolute;
+    right: -30px;
+    top: -40px;
+}
+
+.about__decor {
+    position: absolute;
+    top: 157px;
+    right: -50px;
+}
+
+.about__img-wrap {
+    margin-left: auto;
+    position: relative;
+    width: 494px;
+}
+
+.about__img-wrap::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 336px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+    z-index: -1;
+}
+
+.about__img {
+    margin: 0 auto;
+    width: 450px;
+    display: block;
+}
+
+/* About img */
+
+
+
 /* =============== Blog ================= */
 
 .blog {
