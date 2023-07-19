@@ -680,9 +680,77 @@ a {
 .service-cta {
     margin-top: 45px;
     padding: 20px 40px;
-    color: #FF5B2E;
+    color: var(--primary-color);
     font-size: 1.6rem;
-    border-color: #FF5B2E;
+    border-color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.service-cta:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* ===================== Staff ============================ */
+
+.staff {
+    padding: 130px 0;
+}
+
+.staff__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff__label {
+    margin-bottom: 15px;
+    color: #5E6085;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.staff__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 59px;
+    width: 100%;
+}
+
+.staff__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff-item__role {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.staff-item__name {
+    margin-top: 14px;
+    color: var(--secondary-color);
+    font-family: 'Sora', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.staff__view-all-btn {
+    margin-top: 48px;
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.staff__view-all-btn:hover {
+    color: #fff;
+    background-color: var(--primary-color);
 }
 
 /* ===================== Purchase ========================= */
@@ -840,6 +908,12 @@ a {
     padding: 20px 40px;
     color: var(--primary-color);
     border-color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.blog__btn:hover {
+    color: #fff;
+    background-color: var(--primary-color);
 }
 
 .blog__list {
@@ -852,7 +926,7 @@ a {
     padding-top: 24px;
     padding-left: 36px;
     border-radius: 24px;
-    background-color: #90CCFF;
+    background-color: var(--back-color-thumb, #90CCFF);
 }
 
 .blog-datetime {
@@ -876,6 +950,9 @@ a {
 .blog__heading {
     margin-top: 28px;
     margin-bottom: 16px;
+}
+
+.blog__heading a {
     color: var(--secondary-color);
     font-family: 'Sora', sans-serif;
     font-size: 2.2rem;
