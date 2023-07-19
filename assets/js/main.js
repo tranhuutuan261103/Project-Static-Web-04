@@ -24,3 +24,37 @@ for (var i = 0; i < btnsSwichToggle.length; i++) {
     this.className += " purchase__switch-toggle-btn-item-active";
   });
 }
+
+var brnSlideShow = document.getElementById("slide-show");
+
+var btnLeftArrow = document.getElementById("slide-show__left-arrow");
+var btnRightArrow = document.getElementById("slide-show__right-arrow");
+
+var slideShow = document.getElementsByClassName("slide-show__item");
+var slideShowContent = document.getElementsByClassName("review__list");
+
+var slideShowIndex = 0;
+
+btnLeftArrow.addEventListener("click", function () {
+  slideShowIndex--;
+  if (slideShowIndex < 0) {
+    slideShowIndex = slideShow.length - 1;
+  }
+  for (var i = 0; i < slideShow.length; i++) {
+    slideShow[i].className = slideShow[i].className.replace(" slide-show__item-active", "");
+  }
+  slideShow[slideShowIndex].className += " slide-show__item-active";
+  slideShowContent[0].style.transform = "translateX(" + slideShowIndex * -100 + "%)";
+});
+
+btnRightArrow.addEventListener("click", function () {
+  slideShowIndex++;
+  if (slideShowIndex > slideShow.length - 1) {
+    slideShowIndex = 0;
+  }
+  for (var i = 0; i < slideShow.length; i++) {
+    slideShow[i].className = slideShow[i].className.replace(" slide-show__item-active", "");
+  }
+  slideShow[slideShowIndex].className += " slide-show__item-active";
+  slideShowContent[0].style.transform = "translateX(" + slideShowIndex * -100 + "%)";
+});
